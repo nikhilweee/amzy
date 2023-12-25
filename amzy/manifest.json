@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Amzy",
+  "version": "0.1",
+  "description": "Enhance Amazon search with product insights",
+  "icons": {
+    "512": "images/icon-512.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "host_permissions": ["https://www.amazon.com/*"]
+}
