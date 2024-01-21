@@ -29,7 +29,7 @@ async function addInsights(product) {
   );
 
   // Not all products have insights
-  if (insights) {
+  if (insights && displayArea) {
     // Add insights to the display area
     displayArea.innerHTML = insights.innerHTML;
     // Add event listeners to buttons
